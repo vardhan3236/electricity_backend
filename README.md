@@ -1,3 +1,20 @@
+Steps for installation:
+
+1. Download the Zip file,
+2. Open the backend folder in any editor (IntelliJ preferred),
+3. Open the Front folder in any editor (VSCode preferred),
+4. Build the backend project by doing right click and build and then run all the services: Api Gateway, Connection Service and Chart Service by going to the springbootApplication.java file and doing right click and then running,
+5. Do Post: http://localhost:8080/api/excel/import on Postman to fill up the database with the excel data,
+6. Excel data is in the static/excel folder of the connection service,
+7. Do npm install in the VSCode after navigating to the src/app folder,
+8. Then do, npm start: Front end will start running on localhost:4200.
+9. The UI will show up 4200 port.
+
+
+
+
+
+
 Front Page of Displaying all data in table
     
 ![image](https://github.com/vardhan3236/electricity_frontend/assets/126255853/dd5f76b8-1724-49ca-8272-53cc2349c3de)
