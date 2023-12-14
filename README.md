@@ -1,3 +1,5 @@
+**Electricity Board Web Application:**
+
 In developing the web application for the Electricity Board, I strategically employed a microservices architecture, consisting of three key components: the API Gateway, Charting Service, and Connection Service. The Connection Service played a pivotal role, featuring APIs for initial table retrieval in the UI, CRUD operations for table edits, and a count API to track the number of approved or pending requests per month. To facilitate seamless communication between services, the Charting Service utilized a feign client to interact with the count API within the Connection Service. The API Gateway, functioning as a central hub, established a common port through Spring Cloud Gateway, enabling Angular to communicate with both the Connection and Charting Services efficiently.
 
 On the frontend, the UI was crafted using Angular, incorporating all the specified features outlined in the problem statement. The home page seamlessly interacted with the Connection Service through the API Gateway, fetching table data and enabling CRUD operations. Additionally, the chart tab in the navigation leveraged the API Gateway to call the Charting Service, which, in turn, communicated with the count API in the Connection Service. The result was a visually compelling presentation of connection request counts through a line chart, implemented using the chart.js library. This intuitive design featured separate tabs for approved and pending statuses, enhancing the user experience and providing valuable insights into application trends.
@@ -16,10 +18,6 @@ Steps for installation:
 7. Do npm install in the VSCode after navigating to the src/app folder,
 8. Then do, npm start: Front end will start running on localhost:4200.
 9. The UI will show up 4200 port.
-
-
-
-
 
 
 Front Page of Displaying all data in table
